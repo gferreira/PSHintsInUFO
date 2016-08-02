@@ -3,14 +3,16 @@ PS Hints in UFO
 
 This repository contains information, scripts and data to assist in the process of defining a standard format for storing PS hints in UFO.
 
+
 0. Introduction
 ---------------
 
-- PS hints are not covered by the [UFO specification](http://unifiedfontobject.org/)
+- PS hints are not (yet) covered by the [UFO specification](http://unifiedfontobject.org/)
 - PS hints are important for low-resolution printers and on-screen display
 - PS hints often need to be edited manually (autohint on font generation is not good enough)
 - there are different, non-standard implementations of PS hints in UFO (RoboFab/Superpolator, AFDKO/vfb2ufo)
 - manual hints are currently not supported in a RoboFont-based workflow
+
 
 1. Available formats and implementations
 ----------------------------------------
@@ -33,7 +35,6 @@ This repository contains information, scripts and data to assist in the process 
 
 - [test-UFOCentral-hints.py](data/test-UFOCentral-hints.py)
 - [example `.glif` file with hints](data/TestFont_UFOCentral_hints.ufo/glyphs/B_.glif)
-
 - [test-UFOCentral-links.py](data/test-UFOCentral-links.py)
 - [example `.glif` file with links](data/TestFont_UFOCentral_links.ufo/glyphs/B_.glif')
 
@@ -70,10 +71,11 @@ In current tests, an error is raised when trying to generate `.otf` from an UFO 
 - [test-vfb2ufo-hints-links.py](data/test-vfb2ufo-hints-links.py)
 - [example `.glif` file with hints](data/TestFont_vfb2ufo_hints.ufo/glyphs/B_.glif) / [links](data/TestFont_vfb2ufo_links.ufo/glyphs/B_.glif) (same output)
 
+
 2. Comments
 -----------
 
 - there should be one standard way to describe hints in UFOs!
 - PS hints should be covered by the UFO specification
-- all implementations of PS hints in UFO (AFDKO, RoboFont, FontLab &amp; others) should follow the specified format
+- all implementations of PS hints in UFO (AFDKO, RoboFont, FontLab & others) should follow the specified format
 - it should be possible to manually edit PS hints in RoboFont (extension?)
