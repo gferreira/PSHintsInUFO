@@ -11,7 +11,3 @@ why?
 - PS hints often need to be edited manually (autohint on font generation is not good enough)
 - there are different, non-standard implementations of PS hints in UFO (RoboFab/Superpolator, AFDKO/vfb2ufo)
 - manual hints are currently not supported in a RoboFont-based workflow
-
-- - -
-
-Test fonts kindly provided by [Typofonderie](#).
