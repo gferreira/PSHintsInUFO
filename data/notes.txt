@@ -1,0 +1,6 @@
+TestFont1.vfb -> Retiro Regular 96pt (kindly provided by Typofonderie)
+TestFont2.vfb -> Parisinne Plus Regular (kindly provided by Typofonderie)
+TestFont3.vfb -> Slabo Xpx (http://github.com/TiroTypeworks/Slabo)
+
+- all fonts were manually subsetted to include just a few glyphs (B H O n o)
+- most meta-information fields have been cleared (not relevant for hints testing)
