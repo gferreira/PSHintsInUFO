@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="H" format="1">
+  <advance width="779"/>
+  <unicode hex="0048"/>
+  <outline>
+    <contour>
+      <point x="685" y="0" type="line"/>
+      <point x="685" y="674" type="line"/>
+      <point x="561" y="674" type="line"/>
+      <point x="561" y="401" type="line"/>
+      <point x="218" y="401" type="line"/>
+      <point x="218" y="674" type="line"/>
+      <point x="94" y="674" type="line"/>
+      <point x="94" y="0" type="line"/>
+      <point x="218" y="0" type="line"/>
+      <point x="218" y="272" type="line"/>
+      <point x="561" y="272" type="line"/>
+      <point x="561" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.robofab.postScriptHintData</key>
+      <dict>
+        <key>hHints</key>
+        <array>
+          <array>
+            <integer>21</integer>
+            <integer>-21</integer>
+          </array>
+          <array>
+            <integer>272</integer>
+            <integer>129</integer>
+          </array>
+          <array>
+            <integer>674</integer>
+            <integer>-20</integer>
+          </array>
+        </array>
+        <key>vHints</key>
+        <array>
+          <array>
+            <integer>94</integer>
+            <integer>124</integer>
+          </array>
+          <array>
+            <integer>561</integer>
+            <integer>124</integer>
+          </array>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name=".notdef" format="1">
+  <advance width="500"/>
+  <outline>
+    <contour>
+      <point x="109" y="636" type="line"/>
+      <point x="232" y="515" type="line"/>
+      <point x="232" y="461" type="line"/>
+      <point x="150" y="515" type="line"/>
+      <point x="150" y="450" type="line"/>
+      <point x="352" y="249" type="line"/>
+      <point x="352" y="325" type="line"/>
+      <point x="391" y="286" type="line"/>
+      <point x="391" y="36" type="line"/>
+      <point x="352" y="77" type="line"/>
+      <point x="352" y="138" type="line"/>
+      <point x="150" y="339" type="line"/>
+      <point x="150" y="265" type="line"/>
+      <point x="232" y="157" type="line"/>
+      <point x="232" y="96" type="line"/>
+      <point x="109" y="217" type="line"/>
+    </contour>
+    <contour>
+      <point x="420" y="0" type="line"/>
+      <point x="420" y="675" type="line"/>
+      <point x="82" y="675" type="line"/>
+      <point x="82" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.robofab.postScriptHintData</key>
+      <dict>
+        <key>hHints</key>
+        <array>
+          <array>
+            <integer>-100</integer>
+            <integer>90</integer>
+          </array>
+          <array>
+            <integer>20</integer>
+            <integer>140</integer>
+          </array>
+          <array>
+            <integer>70</integer>
+            <integer>90</integer>
+          </array>
+          <array>
+            <integer>280</integer>
+            <integer>90</integer>
+          </array>
+          <array>
+            <integer>460</integer>
+            <integer>-20</integer>
+          </array>
+          <array>
+            <integer>490</integer>
+            <integer>90</integer>
+          </array>
+          <array>
+            <integer>680</integer>
+            <integer>-20</integer>
+          </array>
+          <array>
+            <integer>700</integer>
+            <integer>-20</integer>
+          </array>
+        </array>
+        <key>vHints</key>
+        <array>
+          <array>
+            <integer>10</integer>
+            <integer>90</integer>
+          </array>
+          <array>
+            <integer>250</integer>
+            <integer>100</integer>
+          </array>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
