@@ -55,9 +55,14 @@ This repository contains information, scripts and data to assist in the process 
 - follows the AFDKO format, with hints stored in the default layer
 - produces the same output for hints and links
 
-#### Problems
+#### Tests and examples
 
-In current tests, an error is raised when trying to generate `.otf` from an UFO converted with vfb2ufo:
+- [test-vfb2ufo-hints-links.py](data/test-vfb2ufo-hints-links.py)
+- [example `.glif` file with hints](data/TestFont_vfb2ufo_hints.ufo/glyphs/B_.glif) / [links](data/TestFont_vfb2ufo_links.ufo/glyphs/B_.glif) (same output)
+
+#### Problem
+
+In current tests, an error is raised when trying to generate `.otf` with `makeotf` from an UFO converted with vfb2ufo:
 
     parseT1HintData: unhandled token: <hintSetList>
     tx: (ufr) Encountered <hintset> when not under <hintSetList>. Glyph: B. Context: etList>
@@ -66,10 +71,11 @@ In current tests, an error is raised when trying to generate `.otf` from an UFO 
     .
     tx: fatal error
 
-#### Tests and examples
+This error is raised because, in vfb2ufo’s output, the `<hintSetList>` elements don’t have an `id` attribute. This attribute is required by the current parsing logic in the `tx` tool, which is used by `makeotf` to create a `.pfa` font from UFO.
 
-- [test-vfb2ufo-hints-links.py](data/test-vfb2ufo-hints-links.py)
-- [example `.glif` file with hints](data/TestFont_vfb2ufo_hints.ufo/glyphs/B_.glif) / [links](data/TestFont_vfb2ufo_links.ufo/glyphs/B_.glif) (same output)
+The problem can be fixed by adding a dummy `id` attribute to all `<hintSetList>` elements, as demonstrated in the script [fix-hintSetList.py](data/fix-hintSetList.py). UFOs which have been ‘repaired’ in this way can then be converted with `tx` and generated with `makeotf` without raising an error. **This is a temporary hack until the `tx` parser is updated to be less strict, not requiring an `id` attribute.**
+
+Note: The `id` attribute is a fingerprint used by the AFDKO `autohint` tool to indicate if a glyph has been modified since the last time it was autohinted. A dummy value for `id` will cause autohint to rehint the tool.
 
 
 2. Comments
