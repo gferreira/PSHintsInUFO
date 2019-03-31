@@ -4,8 +4,7 @@ PS Hints in UFO
 This repository contains information, scripts and data to assist in the process of defining a standard format for storing PS hints in UFO.
 
 
-0. Introduction
----------------
+## 0. Introduction
 
 - PS hints are not (yet) covered by the [UFO specification](http://unifiedfontobject.org/)
 - PS hints are important for low-resolution printers and on-screen display
@@ -14,8 +13,7 @@ This repository contains information, scripts and data to assist in the process 
 - manual hints are currently not supported in a RoboFont-based workflow
 
 
-1. Available formats and implementations
-----------------------------------------
+## 1. Available formats and implementations
 
 ### 1.1. RoboFab / UFOCentral
 
@@ -78,8 +76,7 @@ The problem can be fixed by adding a dummy `id` attribute to all `<hintSetList>`
 Note: The `id` attribute is a fingerprint used by the AFDKO `autohint` tool to indicate if a glyph has been modified since the last time it was autohinted. A dummy value for `id` will cause autohint to rehint the tool.
 
 
-2. Comments
------------
+## 2. Comments
 
 - there should be one standard way to describe hints in UFOs!
 - PS hints should be covered by the UFO specification
